@@ -22,12 +22,19 @@ namespace Dictionary
         {
             InitializeComponent();
             MainMenuGrid.Visibility = Visibility.Visible;
+            DictionaryGrid.Visibility = Visibility.Hidden;
         }
 
         private void DictionaryButton_Click(object sender, RoutedEventArgs e)
         {
             MainMenuGrid.Visibility = Visibility.Hidden;
             DictionaryGrid.Visibility = Visibility.Visible;
+        }
+
+        private void AddWordButton_Click(object sender, RoutedEventArgs e)
+        {
+            WordProperties wp = new WordProperties();
+            wp.Show();
         }
     }
 }
