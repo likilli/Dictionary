@@ -21,6 +21,13 @@ namespace Dictionary
         public DictionaryWindow()
         {
             InitializeComponent();
+            MainMenuGrid.Visibility = Visibility.Visible;
+        }
+
+        private void DictionaryButton_Click(object sender, RoutedEventArgs e)
+        {
+            MainMenuGrid.Visibility = Visibility.Hidden;
+            DictionaryGrid.Visibility = Visibility.Visible;
         }
     }
 }

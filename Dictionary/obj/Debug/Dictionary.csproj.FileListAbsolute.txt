@@ -10,3 +10,4 @@ C:\Users\Olimpiada\Documents\GitHub\Dictionary\Dictionary\bin\Debug\Dictionary.e
 C:\Users\Olimpiada\Documents\GitHub\Dictionary\Dictionary\bin\Debug\Dictionary.pdb
 C:\Users\Olimpiada\Documents\GitHub\Dictionary\Dictionary\obj\Debug\Dictionary.exe
 C:\Users\Olimpiada\Documents\GitHub\Dictionary\Dictionary\obj\Debug\Dictionary.pdb
+C:\Users\Olimpiada\Documents\GitHub\Dictionary\Dictionary\obj\Debug\Dictionary.csprojResolveAssemblyReference.cache
