@@ -1,0 +1,12 @@
+C:\Users\Olimpiada\Documents\GitHub\Dictionary\Dictionary\bin\Debug\Dictionary.exe.config
+C:\Users\Olimpiada\Documents\GitHub\Dictionary\Dictionary\obj\Debug\DictionaryWindow.baml
+C:\Users\Olimpiada\Documents\GitHub\Dictionary\Dictionary\obj\Debug\DictionaryWindow.g.cs
+C:\Users\Olimpiada\Documents\GitHub\Dictionary\Dictionary\obj\Debug\App.g.cs
+C:\Users\Olimpiada\Documents\GitHub\Dictionary\Dictionary\obj\Debug\Dictionary_MarkupCompile.cache
+C:\Users\Olimpiada\Documents\GitHub\Dictionary\Dictionary\obj\Debug\Dictionary.g.resources
+C:\Users\Olimpiada\Documents\GitHub\Dictionary\Dictionary\obj\Debug\Dictionary.Properties.Resources.resources
+C:\Users\Olimpiada\Documents\GitHub\Dictionary\Dictionary\obj\Debug\Dictionary.csproj.GenerateResource.Cache
+C:\Users\Olimpiada\Documents\GitHub\Dictionary\Dictionary\bin\Debug\Dictionary.exe
+C:\Users\Olimpiada\Documents\GitHub\Dictionary\Dictionary\bin\Debug\Dictionary.pdb
+C:\Users\Olimpiada\Documents\GitHub\Dictionary\Dictionary\obj\Debug\Dictionary.exe
+C:\Users\Olimpiada\Documents\GitHub\Dictionary\Dictionary\obj\Debug\Dictionary.pdb
