@@ -36,5 +36,12 @@ namespace Dictionary
             WordProperties wp = new WordProperties();
             wp.Show();
         }
+
+        private void MainMenuButton_Click(object sender, RoutedEventArgs e)
+        {
+            MainMenuGrid.Visibility = Visibility.Visible;
+            DictionaryGrid.Visibility = Visibility.Hidden;
+
+        }
     }
 }
