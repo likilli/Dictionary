@@ -26,7 +26,14 @@ namespace Dictionary
             DictionaryGrid.Visibility = Visibility.Hidden;
             
         }
-
+        private void RefreshList()
+        {
+            DictionaryListWords.Items.Clear();
+            foreach (var item in dict.Words)
+            { 
+                DictionaryListWords.Items.Add(item.Word1 + " - " + item.Word2);
+            }
+        }
         private void DictionaryButton_Click(object sender, RoutedEventArgs e)
         {
             MainMenuGrid.Visibility = Visibility.Hidden;
@@ -35,7 +42,7 @@ namespace Dictionary
 
         private void AddWordButton_Click(object sender, RoutedEventArgs e)
         {
-            WordProperties wp = new WordProperties(dict);
+            WordProperties wp = new WordProperties(dict, null);
             wp.Show();
         }
 
@@ -44,6 +51,20 @@ namespace Dictionary
             MainMenuGrid.Visibility = Visibility.Visible;
             DictionaryGrid.Visibility = Visibility.Hidden;
 
+        }
+
+        private void EditWordButton_Click(object sender, RoutedEventArgs e)
+        {
+            if (DictionaryListWords.SelectedIndex != -1)
+            {
+                WordProperties wp = new WordProperties(dict, DictionaryListWords.SelectedIndex);
+                wp.Show();
+            }
+        }
+
+        private void RefreshButton_Click(object sender, RoutedEventArgs e)
+        {
+            RefreshList();
         }
     }
 }

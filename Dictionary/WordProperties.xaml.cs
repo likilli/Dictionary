@@ -19,11 +19,33 @@ namespace Dictionary
     /// </summary>
     public partial class WordProperties : Window
     {
+        int? index;
         DictLibrary dict;
-        public  WordProperties(DictLibrary d)
+        public WordProperties(DictLibrary d, int? index)
         {
             InitializeComponent();
             dict = d;
+            this.index = index;
+            if(index != null)
+            {
+                
+                WordOneTextBox.Text = d.Find((int)(index)).Word1;
+                WordTwoTextBox.Text = d.Find((int)(index)).Word2;
+            }
+        }
+        // Save
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            if (index == null)
+            {
+                dict.AddWord(WordOneTextBox.Text, WordTwoTextBox.Text);
+
+            }
+            else
+            {
+                dict.Find((int)(index)).Word1 = WordOneTextBox.Text;
+                dict.Find((int)(index)).Word2 = WordTwoTextBox.Text;
+            }
         }
 
        
