@@ -45,5 +45,10 @@ namespace Dictionary
             DictionaryGrid.Visibility = Visibility.Hidden;
 
         }
+
+        private void EditWordButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
