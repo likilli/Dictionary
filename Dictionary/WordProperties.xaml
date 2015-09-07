@@ -3,6 +3,9 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="WordProperties" Height="300" Width="300">
     <Grid>
-        
+        <TextBox x:Name="WordOneTextBox" HorizontalAlignment="Left" Height="38" Margin="10,45,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="WordTwoTextBox" HorizontalAlignment="Left" Height="38" Margin="153,45,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button Content="SAVE" HorizontalAlignment="Left" Margin="83,124,0,0" VerticalAlignment="Top" Width="122" Height="40"/>
+
     </Grid>
 </Window>

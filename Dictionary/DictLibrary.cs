@@ -23,6 +23,11 @@ namespace Dictionary
 
         }
 
+        /// <summary>
+        /// Find word
+        /// </summary>
+        /// <param name="newWord">Some word</param>
+        /// <returns>Found word</returns>
         public Word Find(string newWord)//Посик слова
         {
             foreach (var w in Words)
@@ -84,26 +89,25 @@ namespace Dictionary
             }
             else
             {
-                Console.WriteLine("Word not found!");
+                throw new Exception("Word not found!");
             }
         }
-        public void FindTranslationOfWord(string word)
+        public string FindTranslationOfWord(string word)
         {
             foreach (var wd in Words)
             {
 
                 if (word == wd.Word1)
                 {
-                    Console.WriteLine(wd.Word2);
-                    //return wd.Word2;
+                    return wd.Word2;
                 }
                 else
                 {
-                    Console.WriteLine(wd.Word1);
-                    //return wd.Word1;  
+                    return wd.Word1;  
                 }
 
             }
+            throw new Exception("Word not found!");
 
         }
 

@@ -18,11 +18,13 @@ namespace Dictionary
    
     public partial class DictionaryWindow : Window
     {
+        DictLibrary dict = new DictLibrary();
         public DictionaryWindow()
         {
             InitializeComponent();
             MainMenuGrid.Visibility = Visibility.Visible;
             DictionaryGrid.Visibility = Visibility.Hidden;
+            
         }
 
         private void DictionaryButton_Click(object sender, RoutedEventArgs e)
@@ -33,7 +35,7 @@ namespace Dictionary
 
         private void AddWordButton_Click(object sender, RoutedEventArgs e)
         {
-            WordProperties wp = new WordProperties();
+            WordProperties wp = new WordProperties(dict);
             wp.Show();
         }
     }

@@ -19,9 +19,13 @@ namespace Dictionary
     /// </summary>
     public partial class WordProperties : Window
     {
-        public WordProperties()
+        DictLibrary dict;
+        public  WordProperties(DictLibrary d)
         {
             InitializeComponent();
+            dict = d;
         }
+
+       
     }
 }
