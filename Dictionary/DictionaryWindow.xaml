@@ -9,17 +9,17 @@
             <RowDefinition Height="50*"/>
         </Grid.RowDefinitions>
         <Label x:Name="StatusBarPanel" Content="" HorizontalAlignment="Left" Margin="10,15.478,0,0" VerticalAlignment="Top" Width="497" Grid.Row="1"/>
-        <Grid x:Name="MainMenuGrid" HorizontalAlignment="Left" Height="269" VerticalAlignment="Top" Width="517" d:IsHidden="True">
+        <Grid x:Name="MainMenuGrid" HorizontalAlignment="Left" Height="269" VerticalAlignment="Top" Width="517">
             <Button x:Name="DictionaryButton" Content="Dictionary" HorizontalAlignment="Left" Margin="117,49,-92,0" VerticalAlignment="Top" Width="75" Click="DictionaryButton_Click"/>
             <Button x:Name="StudyButton" Content="Study" HorizontalAlignment="Left" Margin="117,100,-92,-20" VerticalAlignment="Top" Width="75"/>
             <Button x:Name="ExitButton" Content="Exit" HorizontalAlignment="Left" Margin="117,161,-92,-81" VerticalAlignment="Top" Width="75"/>
         </Grid>
-        <Grid x:Name="DictionaryGrid" HorizontalAlignment="Left" Height="269" VerticalAlignment="Top" Width="517">
+        <Grid x:Name="DictionaryGrid" HorizontalAlignment="Left" Height="269" VerticalAlignment="Top" Width="517" d:IsHidden="True">
             <ListBox x:Name="DictionaryListWords" HorizontalAlignment="Left" Height="100" Margin="65,36,0,0" VerticalAlignment="Top" Width="248"/>
             <Button x:Name="AddWordButton" Content="Add Word" HorizontalAlignment="Left" Margin="65,182,0,0" VerticalAlignment="Top" Width="75" Click="AddWordButton_Click"/>
             <Button x:Name="DelWordButton" Content="Delete Word" HorizontalAlignment="Left" Margin="214,182,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="1.073,0.446"/>
             <Button x:Name="EditWordButton" Content="Edit Word" HorizontalAlignment="Left" Margin="397,182,0,0" VerticalAlignment="Top" Width="75"/>
-            <Button x:Name="MainMenuButton" Content="Main Manu" HorizontalAlignment="Left" Margin="397,58,0,0" VerticalAlignment="Top" Width="75"/>
+            <Button x:Name="MainMenuButton" Content="Main Manu" HorizontalAlignment="Left" Margin="397,58,0,0" VerticalAlignment="Top" Width="75" Click="MainMenuButton_Click"/>
         </Grid>
 
     </Grid>
