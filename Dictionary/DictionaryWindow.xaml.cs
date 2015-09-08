@@ -55,9 +55,6 @@ namespace Dictionary
 
         private void EditWordButton_Click(object sender, RoutedEventArgs e)
         {
-<<<<<<< HEAD
-
-=======
             if (DictionaryListWords.SelectedIndex != -1)
             {
                 WordProperties wp = new WordProperties(dict, DictionaryListWords.SelectedIndex);
@@ -68,7 +65,6 @@ namespace Dictionary
         private void RefreshButton_Click(object sender, RoutedEventArgs e)
         {
             RefreshList();
->>>>>>> origin/master
         }
     }
 }
