@@ -14,7 +14,7 @@ namespace Dictionary
     public class DictLibrary
     {
 
-        public List<Word> Words;
+        public List<Word> Words { get; private set; }
 
 
         public DictLibrary()
@@ -39,6 +39,12 @@ namespace Dictionary
 
             }
             return null;
+
+        }
+        public Word Find(int index)//Посик слова
+        {
+           
+            return Words[index];
 
         }
         public void AddWord(string newWord, string translate)// Добавляем слово
